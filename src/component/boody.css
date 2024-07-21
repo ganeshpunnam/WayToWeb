@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fb;
+    color: #333;
+    box-sizing: border-box;
+    font-family: "GT Walsheim", Sans-serif;
+  }
+  .container {
+    padding: 20px 50px;
+    width: 75%;
+    margin:auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+  }
+  .full-width {
+    grid-column: span 2;
+  }
+  .card ,.card-9{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    font-size: 20px;
+    font-family: "GT Walsheim", Sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit:contain;
+  }
+  .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .card p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 20px 20px;
+    width: 70%;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    left: 11.6%;
+
+    bottom: 9%;
+    position: absolute;
+  }
+  .btn:hover {
+    box-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.544);
+  }
+  .progress-bar {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 4px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF00;
+    box-shadow: 0px 0px 0px 1px rgba(112.00000000000011, 112.00000000000011, 112.00000000000011, 0.15) inset;
+
+  }
+
+
+  a{
+    text-decoration: none;
+    color: #007BFF;
+  }
+  .progress {
+    height: 100%;
+    background-image: linear-gradient(90deg, #8745d5 0%, #49c193 100%);
+    border-radius: 15px;
+  }
+  .title-bar {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .badge {
+    padding: 5px 15px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #8745d5 0%, #49c193 100%);
+    border-radius: 20px 20px 20px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    width: fit-content;
+    
+  }
+  .list {
+    padding: 0;
+    
+  }
+  .list li {
+    margin-bottom: 10px;
+  }
+
+  .list li >p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: gray;
+  }
+
+  .list li::before {
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+ video{
+    height: 300px;
+ }
+ .card-2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    font-size: 20px;
+    font-family: "GT Walsheim", Sans-serif;
+  }
+  .card-2 > p{
+    color: gray;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .videostyle{
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+    border: none;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  #p1{
+    font-size: 15px;
+  }
+  
+ 
+  
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 15px; /* Space between buttons */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .feature-list li {
+    display: flex; /* Center the button inside the li */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Button styles */
+  .feature-list button {
+    background-color: #ffffff; /* Background color */
+    color: rgb(116, 116, 116); /* Text color */
+    border: 2px solid #5f6061; /* Border color and width */
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s; /* Transition for hover effect */
+    width: 100%; /* Full width of its container */
+  }
+  .features{
+    display: flex;
+  }
+  .feature{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  /* Hover effect */
+  .feature-list button:hover {
+    border-color: #505050; /* Darker border color on hover */
+  }
+  
+  /* Specific button layout adjustments */
+  .feature-list li:nth-child(1),
+  .feature-list li:nth-child(2) {
+    flex: 1 1 calc(50% - 10px); /* 2 buttons per row */
+  }
+  
+  .feature-list li:nth-child(3),
+  .feature-list li:nth-child(4) {
+    flex: 1 1 calc(50% - 10px); /* 2 buttons per row */
+  }
+  
+  .feature-list li:nth-child(5),
+  .feature-list li:nth-child(6),
+  .feature-list li:nth-child(7) {
+    flex: 1 1 calc(33.33% - 10px); /* 3 buttons per row */
+  }
+  
+  .feature-list li:nth-child(8) {
+    flex: 1 1 100%; /* 1 button spanning full width */
+  }
+  

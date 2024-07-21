@@ -1,0 +1,10 @@
+.shadow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background:black;
+    border-radius: 50%;
+    pointer-events: none; /* So that it doesn't interfere with clicking */
+    transition: transform 0.1s ease;
+  }
+  

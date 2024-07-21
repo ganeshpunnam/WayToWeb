@@ -1,0 +1,99 @@
+/* src/components/Digital.css */
+.bg {
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 50px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 500px;
+    align-items: center;
+}
+
+.leftContainer {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.leftContainer p {
+    min-height: 200px;
+    overflow: hidden; /* Ensures text does not overflow */
+    transition: max-height 0.5s ease-out;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.keyword-rotator {
+    position: relative;
+    height: 300px; /* Adjust based on the height of each item */
+    overflow: hidden;
+    width: 100%;
+}
+
+.keyword-rotator ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    /* Adjust animation duration based on the number of items and desired speed */
+    animation: scrollKeywords 20s linear infinite;
+}
+
+.keyword-rotator li {
+    height: 100px; /* Must match the height of .keyword-rotator */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    transition: color 0.5s;
+}
+
+.leftContainer >h1{
+    font-size: 40px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.keyword-rotator li.highlighted {
+    color: #000;
+}
+
+@keyframes scrollKeywords {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%); /* Adjust based on the number of items */
+    }
+}
+
+/* Duplicate the list items in the HTML or dynamically in React to ensure smooth scrolling */
+.keyword-rotator ul::after {
+    content: "";
+    display: block;
+    height: 100%; /* Must match the height of the visible items */
+}
+
+@media (max-width: 768px) {
+    .bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .leftContainer {
+        margin-bottom: 50px;
+    }
+}
